@@ -1,4 +1,5 @@
 import sys
+from os import path
 
 template = """
 testdata = []
@@ -32,6 +33,7 @@ if __name__ == "__main__":
     year = args[1]
     day = args[2]
     contents = template.format("{}","{}","{}","{}", day)
-    with open("{}/Python/day{}.py".format(year, day), "w") as f:
-        f.write(contents)
-    f = open("{}/Python/input/day{}.txt".format(year, day), 'x')
+    if not path.exists("{}/Python/day{}.py".format(year, day)):
+        with open("{}/Python/day{}.py".format(year, day), "w") as f:
+            f.write(contents)
+        f = open("{}/Python/input/day{}.txt".format(year, day), 'x')
