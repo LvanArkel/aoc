@@ -4,6 +4,13 @@
 (defn puzzle-input  []
   (utils/intlist (utils/get-input 2021 1)))
 
+(defn puzzle [input n]
+  (->>
+   input
+   (#(map vector % (drop n %)))
+   (map (fn [[a b]] (if (< a b) 1 0)))
+   (reduce +)))
+
 (defn puzzle1 [input]
   (->>
    input
@@ -34,7 +41,8 @@
             269
             260
             263])
-  (puzzle1 (puzzle-input))
+  (puzzle1 (puzzle-input));;1709
+  (puzzle (puzzle-input) 1)
   (puzzle2 [199
             200
             208
@@ -45,4 +53,6 @@
             269
             260
             263])
-  (puzzle2 (puzzle-input)))
+  (puzzle2 (puzzle-input));;1761
+  (puzzle (puzzle-input) 3)
+  )

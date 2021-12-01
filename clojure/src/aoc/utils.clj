@@ -3,6 +3,8 @@
             [clojure.string :as string]))
 
 (def resource-root "C:/Users/Lars/Documents/Programming/aoc/inputs")
+(def file-path "C:/Users/Lars/Documents/Programming/aoc/clojure/src/aoc")
+(def template-path (str file-path "/template.clj"))
 
 (defn- get-file [year filename]
   (io/reader (string/join "/" [resource-root (str year) filename])))
@@ -18,3 +20,11 @@
 
 (defn split-and-patmatch [input split pattern] 
   (map #(re-find (re-matcher pattern %)) (string/split input split)))
+
+(defn makefile [year day]
+  (let [contents (format (slurp (io/reader template-path))
+                     year day year day)]
+    (with-open [wrtr (io/writer (string/join "/" [file-path (str "year" year) (str "day" day ".clj")]))]
+      (.write wrtr contents))))
+
+(comment (makefile 2021 2))
