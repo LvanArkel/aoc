@@ -1,0 +1,170 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Aborting jack-in. No project type selected.
+; Starting Jack-in Terminal: java -jar ".calva\deps.clj.jar" -Sdeps "{:deps {nrepl/nrepl {:mvn/version,""0.8.3""},cider/cider-nrepl {:mvn/version,""0.26.0""}}}"  -m nrepl.cmdline --middleware "[cider.nrepl/cider-middleware]"
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+; Syntax error compiling at (c:\Users\Lars\Documents\Programming\aoc\clojure\src\aoc\2021\day1.clj:4:1).
+; Unable to resolve symbol: get-file in this context
+clj꞉aoc.2021.day1꞉> 
+; Evaluating file: day1.clj
+; Syntax error compiling at (c:\Users\Lars\Documents\Programming\aoc\clojure\src\aoc\2021\day1.clj:4:1).
+; Unable to resolve symbol: get-file in this context
+; Evaluation of file day1.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉aoc.2021.day1꞉> 
+clj꞉aoc.2021.day1꞉> 
+; Syntax error compiling at (c:\Users\Lars\Documents\Programming\aoc\clojure\src\aoc\2021\day1.clj:4:1).
+; No such namespace: utils
+clj꞉aoc.2021.day1꞉> 
+; Evaluating file: day1.clj
+; Syntax error (IllegalStateException) compiling at (c:\Users\Lars\Documents\Programming\aoc\clojure\src\aoc\2021\day1.clj:4:1).
+; var: utils/get-file is not public
+; Evaluation of file day1.clj failed: class clojure.lang.Compiler$CompilerException
+
+clj꞉aoc.2021.day1꞉> 
+clj꞉aoc.2021.day1꞉> 
+#'aoc.2021.day1/input
+clj꞉aoc.2021.day1꞉> 
+1
+clj꞉aoc.2021.day1꞉> 
+#'aoc.2021.day1/input
+clj꞉aoc.2021.day1꞉> 
+1
+clj꞉aoc.2021.day1꞉> 
+#'aoc.2021.day1/puzzle
+clj꞉aoc.2021.day1꞉> 
+1
+clj꞉aoc.2021.day1꞉> 
+; Evaluating file: day1.clj
+1
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle
+clj꞉aoc.year2021.day1꞉> 
+1
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle
+clj꞉aoc.year2021.day1꞉> 
+"95815\r\n58493\r\n77277\r\n57491\r\n124211\r\n134530\r\n86842\r\n63308\r\n139649\r\n75958\r\n74312\r\n63413\r\n128293\r\n118123\r\n108576\r\n105474\r\n50366\r\n63203\r\n119792\r\n147054\r\n110863\r\n51551\r\n101243\r\n108123\r\n108229\r\n76988\r\n126344\r\n81759\r\n74582\r\n131239\r\n143408\r\n53126\r\n134275\r\n142797\r\n61548\r\n104641\r\n134200\r\n103371\r\n67804\r\n53892\r\n94285\r\n115017\r\n61553\r\n66873\r\n103186\r\n108708\r\n71366\r\n63572\r\n137981\r\n72784\r\n140697\r\n125710\r\n121386\r\n131305\r\n61645\r\n81485\r\n82042\r\n148145\r\n75070\r\n72671\r\n146981\r\n124797\r\n85756\r\n62383\r\n147575\r\n56740\r\n103299\r\n63511\r\n145914\r\n114995\r\n73657\r\n118481\r\n105351\r\n102848\r\n118796\r\n139936\r\n112388\r\n80794\r\n128850\r\n92493\r\n65409\r\n60445\r\n124267\r\n110438\r\n145208\r\n96697\r\n116439\r\n71484\r\n71588\r\n89813\r\n81525\r\n88200\r\n86443\r\n79786\r\n131067\r\n105919\r\n126045\r\n135292\r\n117451\r\n67730"
+clj꞉aoc.year2021.day1꞉> 
+; Syntax error compiling at (c:\Users\Lars\Documents\Programming\aoc\clojure\src\aoc\year2021\day1.clj:5:3).
+; Unable to resolve symbol: intlist in this context
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle
+clj꞉aoc.year2021.day1꞉> 
+(95815 58493 77277 57491 124211 134530 86842 63308 139649 75958 74312 63413 128293 118123 108576 105474 50366 63203 119792 147054 110863 51551 101243 108123 108229 76988 126344 81759 74582 131239 143408 53126 134275 142797 61548 104641 134200 103371 67804 53892 94285 115017 61553 66873 103186 108708 71366 63572 137981 72784 140697 125710 121386 131305 61645 81485 82042 148145 75070 72671 146981 124797 85756 62383 147575 56740 103299 63511 145914 114995 73657 118481 105351 102848 118796 139936 112388 80794 128850 92493 65409 60445 124267 110438 145208 96697 116439 71484 71588 89813 81525 88200 86443 79786 131067 105919 126045 135292 117451 67730)
+clj꞉aoc.year2021.day1꞉> 
+; Evaluating file: day1.clj
+nil
+clj꞉aoc.year2021.day1꞉> 
+[199 200 208 210 200 207 240 269 260 263]
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle1
+clj꞉aoc.year2021.day1꞉> 
+#function[aoc.year2021.day1/puzzle1/fn--7406]
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle1
+clj꞉aoc.year2021.day1꞉> 
+([199 200] [200 208] [208 210] [210 200] [200 207] [207 240] [240 269] [269 260] [260 263])
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle1
+clj꞉aoc.year2021.day1꞉> 
+; Execution error (ArityException) at aoc.year2021.day1/puzzle1 (REPL:11).
+; Wrong number of args (2) passed to: aoc.year2021.day1/puzzle1/fn--7441
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle1
+clj꞉aoc.year2021.day1꞉> 
+(true true true false true true true false true)
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle1
+clj꞉aoc.year2021.day1꞉> 
+; Execution error (ClassCastException) at aoc.year2021.day1/eval7488 (REPL:16).
+; class java.lang.Boolean cannot be cast to class java.lang.Number (java.lang.Boolean and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle1
+clj꞉aoc.year2021.day1꞉> 
+7
+clj꞉aoc.year2021.day1꞉> 
+; Execution error (IllegalArgumentException) at aoc.year2021.day1/puzzle1$fn (REPL:10).
+; Don't know how to create ISeq from: aoc.year2021.day1$puzzle_input
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle1
+clj꞉aoc.year2021.day1꞉> 
+#function[aoc.year2021.day1/puzzle-input]
+clj꞉aoc.year2021.day1꞉> 
+(95815 58493 77277 57491 124211 134530 86842 63308 139649 75958 74312 63413 128293 118123 108576 105474 50366 63203 119792 147054 110863 51551 101243 108123 108229 76988 126344 81759 74582 131239 143408 53126 134275 142797 61548 104641 134200 103371 67804 53892 94285 115017 61553 66873 103186 108708 71366 63572 137981 72784 140697 125710 121386 131305 61645 81485 82042 148145 75070 72671 146981 124797 85756 62383 147575 56740 103299 63511 145914 114995 73657 118481 105351 102848 118796 139936 112388 80794 128850 92493 65409 60445 124267 110438 145208 96697 116439 71484 71588 89813 81525 88200 86443 79786 131067 105919 126045 135292 117451 67730)
+clj꞉aoc.year2021.day1꞉> 
+; Evaluating file: day1.clj
+nil
+clj꞉aoc.year2021.day1꞉> 
+46
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle1
+clj꞉aoc.year2021.day1꞉> 
+([95815 58493] [58493 77277] [77277 57491] [57491 124211] [124211 134530] [134530 86842] [86842 63308] [63308 139649] [139649 75958] [75958 74312] [74312 63413] [63413 128293] [128293 118123] [118123 108576] [108576 105474] [105474 50366] [50366 63203] [63203 119792] [119792 147054] [147054 110863] [110863 51551] [51551 101243] [101243 108123] [108123 108229] [108229 76988] [76988 126344] [126344 81759] [81759 74582] [74582 131239] [131239 143408] [143408 53126] [53126 134275] [134275 142797] [142797 61548] [61548 104641] [104641 134200] [134200 103371] [103371 67804] [67804 53892] [53892 94285] [94285 115017] [115017 61553] [61553 66873] [66873 103186] [103186 108708] [108708 71366] [71366 63572] [63572 137981] [137981 72784] [72784 140697] [140697 125710] [125710 121386] [121386 131305] [131305 61645] [61645 81485] [81485 82042] [82042 148145] [148145 75070] [75070 72671] [72671 146981] [146981 124797] [124797 85756] [85756 62383] [62383 147575] [147575 56740] [56740 103299] [103299 63511] [63511 145914] [145914 114995] [114995 73657] [73657 118481] [118481 105351] [105351 102848] [102848 118796] [118796 139936] [139936 112388] [112388 80794] [80794 128850] [128850 92493] [92493 65409] [65409 60445] [60445 124267] [124267 110438] [110438 145208] [145208 96697] [96697 116439] [116439 71484] [71484 71588] [71588 89813] [89813 81525] [81525 88200] [88200 86443] [86443 79786] [79786 131067] [131067 105919] [105919 126045] [126045 135292] [135292 117451] [117451 67730])
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle1
+clj꞉aoc.year2021.day1꞉> 
+(95815 58493 77277 57491 124211 134530 86842 63308 139649 75958 74312 63413 128293 118123 108576 105474 50366 63203 119792 147054 110863 51551 101243 108123 108229 76988 126344 81759 74582 131239 143408 53126 134275 142797 61548 104641 134200 103371 67804 53892 94285 115017 61553 66873 103186 108708 71366 63572 137981 72784 140697 125710 121386 131305 61645 81485 82042 148145 75070 72671 146981 124797 85756 62383 147575 56740 103299 63511 145914 114995 73657 118481 105351 102848 118796 139936 112388 80794 128850 92493 65409 60445 124267 110438 145208 96697 116439 71484 71588 89813 81525 88200 86443 79786 131067 105919 126045 135292 117451 67730)
+clj꞉aoc.year2021.day1꞉> 
+(95815 58493 77277 57491 124211 134530 86842 63308 139649 75958 74312 63413 128293 118123 108576 105474 50366 63203 119792 147054 110863 51551 101243 108123 108229 76988 126344 81759 74582 131239 143408 53126 134275 142797 61548 104641 134200 103371 67804 53892 94285 115017 61553 66873 103186 108708 71366 63572 137981 72784 140697 125710 121386 131305 61645 81485 82042 148145 75070 72671 146981 124797 85756 62383 147575 56740 103299 63511 145914 114995 73657 118481 105351 102848 118796 139936 112388 80794 128850 92493 65409 60445 124267 110438 145208 96697 116439 71484 71588 89813 81525 88200 86443 79786 131067 105919 126045 135292 117451 67730)
+clj꞉aoc.year2021.day1꞉> 
+100
+clj꞉aoc.year2021.day1꞉> 
+"95815\r\n58493\r\n77277\r\n57491\r\n124211\r\n134530\r\n86842\r\n63308\r\n139649\r\n75958\r\n74312\r\n63413\r\n128293\r\n118123\r\n108576\r\n105474\r\n50366\r\n63203\r\n119792\r\n147054\r\n110863\r\n51551\r\n101243\r\n108123\r\n108229\r\n76988\r\n126344\r\n81759\r\n74582\r\n131239\r\n143408\r\n53126\r\n134275\r\n142797\r\n61548\r\n104641\r\n134200\r\n103371\r\n67804\r\n53892\r\n94285\r\n115017\r\n61553\r\n66873\r\n103186\r\n108708\r\n71366\r\n63572\r\n137981\r\n72784\r\n140697\r\n125710\r\n121386\r\n131305\r\n61645\r\n81485\r\n82042\r\n148145\r\n75070\r\n72671\r\n146981\r\n124797\r\n85756\r\n62383\r\n147575\r\n56740\r\n103299\r\n63511\r\n145914\r\n114995\r\n73657\r\n118481\r\n105351\r\n102848\r\n118796\r\n139936\r\n112388\r\n80794\r\n128850\r\n92493\r\n65409\r\n60445\r\n124267\r\n110438\r\n145208\r\n96697\r\n116439\r\n71484\r\n71588\r\n89813\r\n81525\r\n88200\r\n86443\r\n79786\r\n131067\r\n105919\r\n126045\r\n135292\r\n117451\r\n67730"
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle-input
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle1
+clj꞉aoc.year2021.day1꞉> 
+; Evaluating file: day1.clj
+nil
+clj꞉aoc.year2021.day1꞉> 
+1709
+clj꞉aoc.year2021.day1꞉> 
+; Evaluating file: day1.clj
+nil
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle2
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle2
+clj꞉aoc.year2021.day1꞉> 
+([199 200 208 210] [200 208 210 200] [208 210 200 207] [210 200 207 240] [200 207 240 269] [207 240 269 260] [240 269 260 263])
+clj꞉aoc.year2021.day1꞉> 
+; Syntax error compiling at (c:\Users\Lars\Documents\Programming\aoc\clojure\src\aoc\year2021\day1.clj:20:8).
+; Unable to resolve symbol: tail3 in this context
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle2
+clj꞉aoc.year2021.day1꞉> 
+([199 200 208] [200 208 210] [208 210 200] [210 200 207] [200 207 240] [207 240 269] [240 269 260] [269 260 263])
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle2
+clj꞉aoc.year2021.day1꞉> 
+; Error printing return value (ClassCastException) at java.lang.Class/cast (Class.java:3605).
+; Cannot cast clojure.lang.PersistentVector to java.lang.Number
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle2
+clj꞉aoc.year2021.day1꞉> 
+(607 618 618 617 647 716 769 792)
+clj꞉aoc.year2021.day1꞉> 
+#'aoc.year2021.day1/puzzle2
+clj꞉aoc.year2021.day1꞉> 
+5
+clj꞉aoc.year2021.day1꞉> 
+1761
+clj꞉aoc.year2021.day1꞉> 
