@@ -21,6 +21,8 @@
 (defn split-and-patmatch [input split pattern] 
   (map #(re-find (re-matcher pattern %)) (string/split input split)))
 
+
+;;Make file from template
 (defn makefile [year day]
   (let [contents (format (slurp (io/reader template-path))
                      year day year day)]
