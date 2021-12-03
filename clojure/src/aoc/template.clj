@@ -15,6 +15,6 @@
   (puzzle1 test-input)
   (puzzle1 puzzle-input);; Result
   ;;Room for tests
-  (puzzle1 test-input)
+  (puzzle2 test-input)
   (puzzle2 puzzle-input);; Result
   )
