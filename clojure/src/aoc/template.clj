@@ -1,8 +1,11 @@
 (ns aoc.year%d.day%d
   (:require [aoc.utils :as utils]))
 
-(def puzzle-input (utils/get-input %d %d))
-(def test-input "")
+(defn parse-input [input]
+  input)
+
+(def puzzle-input (parse-input (utils/get-input %d %d)))
+(def test-input (parse-input ""))
 
 (defn puzzle1 [input]
   :todo)
