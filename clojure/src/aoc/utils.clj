@@ -29,4 +29,4 @@
     (with-open [wrtr (io/writer (string/join "/" [file-path (str "year" year) (str "day" day ".clj")]))]
       (.write wrtr contents))))
 
-(comment (makefile 2021 3))
+(comment (makefile 2021 4))
