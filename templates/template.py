@@ -1,7 +1,7 @@
 path = "C:/Users/Lars/Documents/Programming/aoc/inputs/{year}/day{day}.txt"
 
 def parse_puzzle(data):
-  pass
+  return data
 
 def puzzle_input():
   with open(path) as f:

@@ -1,10 +1,10 @@
-(ns aoc.year%d.day%d
+(ns aoc.year{year}.day{day}
   (:require [aoc.utils :as utils]))
 
 (defn parse-input [input]
   input)
 
-(def puzzle-input (parse-input (utils/get-input %d %d)))
+(def puzzle-input (parse-input (utils/get-input {year} {day})))
 (def test-input (parse-input ""))
 
 (defn puzzle1 [input]

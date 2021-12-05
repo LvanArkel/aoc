@@ -1,5 +1,5 @@
-languages = {"clojure": {"extension": "clj", "dir": "clojure/src/aoc"},
-            "python": {"extension": "py", "dir": "python"}}
+languages = {"clojure": {"extension": "clj", "dir": "clojure/src/aoc/year"},
+            "python": {"extension": "py", "dir": "python/"}}
 
 template_path = "templates/template."
 
@@ -13,5 +13,5 @@ if __name__ == "__main__":
   day = int(input("Select a day: "))
   with open(template_path + language["extension"]) as f_temp:
     template = f_temp.read().format(year = year, day = day)
-    with open(language["dir"] + f"/{year}/day{day}.{language['extension']}", 'x') as f_write:
+    with open(language["dir"] + f"{year}/day{day}.{language['extension']}", 'x') as f_write:
       f_write.write(template)
