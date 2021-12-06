@@ -2,8 +2,8 @@
   (:require [clojure.java.io :as io]
             [clojure.string :as string]))
 
-(def resource-root "C:/Users/Lars/Documents/Programming/aoc/inputs")
-(def file-path "C:/Users/Lars/Documents/Programming/aoc/clojure/src/aoc")
+(def resource-root "C:/Users/lvana/Documents/Programming/aoc/inputs")
+(def file-path "C:/Users/lvana/Documents/Programming/aoc/clojure/src/aoc")
 (def template-path (str file-path "/template.clj"))
 
 (defn- get-file [year filename]
