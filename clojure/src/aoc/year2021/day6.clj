@@ -2,7 +2,8 @@
   (:require [aoc.utils :as utils]))
 
 (defn parse-input [input]
-  (-> input utils/csvint frequencies))
+  (let [intlist (utils/csvint input)]
+    (vec (map #(count (filter (fn [v] (= % v)) intlist)) (range 9)))))
 
 (def puzzle-input (parse-input (utils/get-input 2021 6)))
 (def test-input (parse-input "3,4,3,1,2"))
@@ -12,16 +13,9 @@
     (if (> timer 0)
       (recur
        (dec timer)
-       (let [new-fish (reduce #(if (some? (get fish (inc %2)))
-                                 (assoc %1 %2 (get fish (inc %2)))
-                                 %1) {} (range 0 8))]
-         (if (some? (get fish 0))
-           (-> new-fish
-               (assoc 8 (get fish 0))
-               (update 6 #(+ (if (some? %) % 0) (get fish 0))))
-           new-fish))
-       )
-      (apply + (vals fish)))))
+       (conj (update (vec (rest fish)) 6 #(+ (first fish) %))
+             (first fish)))
+      (apply + fish))))
 
 (defn puzzle2 [input]
   :todo)
