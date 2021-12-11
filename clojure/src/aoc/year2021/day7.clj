@@ -31,10 +31,14 @@
                            (map #(get costs (Math/abs (- % n))) input))))
             [] (range minimum maximum)))))
 
+(defn smart1 [input]
+  (/ (apply + input) (count input)))
+
 (comment
   ;;Room for tests
   (puzzle1 test-input)
   (puzzle1 puzzle-input);; 323647
+  (smart1 test-input)
   ;;Room for tests
   (puzzle2 test-input)
   (puzzle2 puzzle-input);; 87640209

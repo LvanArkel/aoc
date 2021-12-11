@@ -16,10 +16,18 @@
 
 (defn csvint [input] (map #(Integer/parseInt %) (string/split input #",")))
 
+(defn digitseq [input] (map #(- (int %) 48) input))
+
 (defn split-lines [input] (string/split-lines input))
 
 (defn split-and-patmatch [input split pattern] 
   (map #(re-find (re-matcher pattern %)) (string/split input split)))
+
+(defn patmatch-lines [input pattern]
+  (map #(re-find pattern %) (string/split-lines input)))
+
+(defn patmatch-lines-all [input pattern]
+  (map #(re-seq pattern %) (string/split-lines input)))
 
 
 ;;Make file from template
@@ -29,4 +37,5 @@
     (with-open [wrtr (io/writer (string/join "/" [file-path (str "year" year) (str "day" day ".clj")]))]
       (.write wrtr contents))))
 
-(comment (makefile 2021 4))
+(defn transpose [matrix]
+  (apply map vector matrix))
