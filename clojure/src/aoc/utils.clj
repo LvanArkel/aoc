@@ -21,7 +21,7 @@
 (defn split-lines [input] (string/split-lines input))
 
 (defn split-and-patmatch [input split pattern] 
-  (map #(re-find (re-matcher pattern %)) (string/split input split)))
+  (map (comp rest #(re-find (re-matcher pattern %))) (string/split input split)))
 
 (defn patmatch-lines [input pattern]
   (map #(re-find pattern %) (string/split-lines input)))
@@ -29,6 +29,10 @@
 (defn patmatch-lines-all [input pattern]
   (map #(re-seq pattern %) (string/split-lines input)))
 
+(defn make-matrix [matrix]
+  {:matrix matrix
+   :height (count matrix)
+   :width (count (first matrix))})
 
 ;;Make file from template
 (defn makefile [year day]
